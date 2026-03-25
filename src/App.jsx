@@ -1,6 +1,6 @@
 import './App.css'
 import Illustration from "./components/Illustration.jsx"
-import {screenshot1, screenshot2, screenshot_result, screenshot_tips} from "./assets/index.js"
+import {screenshot1, screenshot2, screenshot_result, screenshot_tips, sumdu_image } from "./assets/index.js"
 
 function App() {
     return (<>
@@ -53,7 +53,7 @@ function App() {
                             математичних методів</p>
                     </div>
                     <div className="hero-image">
-                        <img src="" alt="Hero" aria-label="Ілюстрація процесу прийняття рішень"/>
+                        <img src={sumdu_image} alt="Hero" aria-label="Ілюстрація процесу прийняття рішень"/>
                     </div>
                 </div>
             </section>
