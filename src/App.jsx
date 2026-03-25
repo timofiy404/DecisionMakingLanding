@@ -46,7 +46,7 @@ function App() {
             <section className="hero" aria-label="Головний банер">
                 <div className="hero-container">
                     <div className="hero-text">
-                        <h1 aria-label="Головний заголовок hero-секції">Приймай рішення структуровано</h1>
+                        <h2 aria-label="Головний заголовок hero-секції">Приймай рішення структуровано</h2>
                         <p aria-label="Опис hero-секції">Сучасний інструмент для аналізу альтернатив на основі математичних методів</p>
                     </div>
                     <div className="hero-image">
