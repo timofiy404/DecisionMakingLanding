@@ -1,4 +1,6 @@
 import './App.css'
+import Illustration from "./components/Illustration.jsx"
+import {screenshot1, screenshot2, screenshot_result, screenshot_tips} from "./assets/index.js"
 
 function App() {
     return (<>
@@ -171,6 +173,30 @@ function App() {
                     методів та зниження порогу входження для користувачів завдяки інтуїтивному інтерфейсу та
                     українській локалізації.
                 </p>
+            </section>
+
+            <section className="section" aria-label="Секція ілюстративних матеріалів">
+                <h3 className="section-title" aria-label="Заголовок секції ілюстрацій">Ілюстративні матеріали</h3>
+                <div style={{ display: "flex", gap: "1.5rem", flexWrap: "wrap", justifyContent: "center" }}>
+                    <Illustration
+                        src={screenshot2}
+                        title="Набір критерій та альтернатив"
+                    />
+                    <Illustration
+                        src={screenshot1}
+                        title="Матриці попарного порівняння"
+                    />
+                </div>
+                <div style={{ display: "flex", gap: "1.5rem", flexWrap: "wrap", justifyContent: "center" }}>
+                    <Illustration
+                        src={screenshot_tips}
+                        title="Підказки для користувача"
+                    />
+                    <Illustration
+                        src={screenshot_result}
+                        title="Наглядні результати"
+                    />
+                </div>
             </section>
         </main>
 
