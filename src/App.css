@@ -80,6 +80,22 @@
     transform: scaleX(1);
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+    outline: none;
+    box-shadow: none;
+    font: inherit;
+    cursor: pointer;
+}
+a:visited {
+    color: inherit;
+}
+
 .main {
     max-width: 1200px;
     margin: 3rem auto;

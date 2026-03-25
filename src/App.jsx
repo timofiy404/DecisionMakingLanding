@@ -33,12 +33,12 @@ function App() {
             </div>
             <nav className="nav-bar" role="navigation" aria-label="Головна навігація">
                 <ul role="list">
-                    <li role="listitem">Короткий опис</li>
-                    <li role="listitem">Ключові слова</li>
-                    <li role="listitem">Мета Дослідження</li>
-                    <li role="listitem">Основні завдання</li>
-                    <li role="listitem">Очікувані результати</li>
-                    <li role="listitem">Контактна інформація</li>
+                    <li role="listitem"><a href="#short-description">Короткий опис</a></li>
+                    <li role="listitem"><a href="#keywords">Ключові слова</a></li>
+                    <li role="listitem"><a href="#goal">Мета Дослідження</a></li>
+                    <li role="listitem"><a href="#main-tasks">Основні завдання</a></li>
+                    <li role="listitem"><a href="#results">Очікувані результати</a></li>
+                    <li role="listitem"><a href="#contacts">Контактна інформація</a></li>
                 </ul>
             </nav>
         </header>
@@ -47,7 +47,8 @@ function App() {
                 <div className="hero-container">
                     <div className="hero-text">
                         <h2 aria-label="Головний заголовок hero-секції">Приймай рішення структуровано</h2>
-                        <p aria-label="Опис hero-секції">Сучасний інструмент для аналізу альтернатив на основі математичних методів</p>
+                        <p aria-label="Опис hero-секції">Сучасний інструмент для аналізу альтернатив на основі
+                            математичних методів</p>
                     </div>
                     <div className="hero-image">
                         <img src="" alt="Hero" aria-label="Ілюстрація процесу прийняття рішень"/>
@@ -68,7 +69,7 @@ function App() {
                 </p>
             </section>
 
-            <section aria-label="Секція короткого опису">
+            <section id="short-description" aria-label="Секція короткого опису">
                 <h3 className="section-title" aria-label="Заголовок секції короткого опису">Короткий опис</h3>
                 <p className="description-text" aria-label="Текст короткого опису">
                     {"Розробка веб-додатку для підтримки прийняття рішень, що реалізує метод аналізу ієрархій " + "(МАІ) та методи в умовах визначеності й ризику. Додаток допомагає користувачам " + "максимізувати позитивнийрезультат у бізнесі, кар'єрі та особистих рішеннях завдяки " + "математичному аналізу, перевірціузгодженості експертних оцінок (CR < 0,1) та наочній " + "візуалізації результатів."}
@@ -87,7 +88,7 @@ function App() {
                 </p>
             </section>
 
-            <section aria-label="Секція ключових слів">
+            <section id="keywords" aria-label="Секція ключових слів">
                 <h3 className="section-title" aria-label="Заголовок секції ключових слів">Ключові слова</h3>
                 <div className="keywords-list" role="list" aria-label="Список ключових слів">
                     <span className="keyword-tag" role="listitem">ASP.NET Core</span>
@@ -105,7 +106,7 @@ function App() {
                 </div>
             </section>
 
-            <section aria-label="Секція мети дослідження">
+            <section id="goal" aria-label="Секція мети дослідження">
                 <h3 className="section-title" aria-label="Заголовок секції мети дослідження">Мета дослідження</h3>
                 <p aria-label="Текст мети дослідження">
                     Метою проєкту є розробка сучасного, доступного та безпечного веб-
@@ -117,7 +118,7 @@ function App() {
                 </p>
             </section>
 
-            <section aria-label="Секція основних завдань">
+            <section id="main-tasks" aria-label="Секція основних завдань">
                 <h3 className="section-title" aria-label="Заголовок секції основних завдань">Основні завдання</h3>
                 <ul className="tasks-list" role="list" aria-label="Список основних завдань">
                     <li role="listitem">
@@ -148,15 +149,19 @@ function App() {
                 </ul>
             </section>
 
-            <section className="section" aria-label="Секція очікуваних результатів">
-                <h3 className="section-title" aria-label="Заголовок секції очікуваних результатів">Очікувані результати</h3>
+            <section id="results" className="section" aria-label="Секція очікуваних результатів">
+                <h3 className="section-title" aria-label="Заголовок секції очікуваних результатів">Очікувані
+                    результати</h3>
                 <p aria-label="Опис очікуваних результатів дослідження">
                     У результаті виконання роботи буде створено повністю функціональний веб-додаток, що дозволяє:
                 </p>
                 <ul className="tasks-list" role="list" aria-label="Список очікуваних результатів">
-                    <li role="listitem">Проводити аналіз альтернатив методом аналізу ієрархій з підтримкою багаторівневої ієрархії критеріїв</li>
+                    <li role="listitem">Проводити аналіз альтернатив методом аналізу ієрархій з підтримкою
+                        багаторівневої ієрархії критеріїв
+                    </li>
                     <li role="listitem">Автоматично перевіряти узгодженість матриць парних порівнянь (CR &lt; 0.1)</li>
-                    <li role="listitem">Приймати рішення в умовах визначеності та ризику з візуалізацією результатів</li>
+                    <li role="listitem">Приймати рішення в умовах визначеності та ризику з візуалізацією результатів
+                    </li>
                     <li role="listitem">Співпрацювати над задачами з іншими користувачами через запрошення</li>
                     <li role="listitem">Зберігати та завантажувати задачі, використовувати шаблони типових рішень</li>
                     <li role="listitem">Проводити мозковий штурм для структурування ідей перед формалізацією задачі</li>
@@ -169,9 +174,10 @@ function App() {
             </section>
         </main>
 
-        <footer className="footer" role="contentinfo" aria-label="Нижній колонтитул сайту">
+        <footer id="contacts" className="footer" role="contentinfo" aria-label="Нижній колонтитул сайту">
             <p aria-label="Інформація про авторські права">© 2026 Багно Тимофій | всі права захищено</p>
-            <span aria-label="Контактна електронна пошта">t.bahno@student.sumdu.edu.ua</span>
+            <p aria-label="Контактна електронна пошта">email - t.bahno@student.sumdu.edu.ua</p>
+            <p>Повний текст бакалаврської можна було б переглянути за наступним <a href="/">посиланням</a>, якби він існував</p>
         </footer>
     </>)
 }
