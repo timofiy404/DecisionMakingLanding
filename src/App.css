@@ -1,0 +1,217 @@
+
+.header-title {
+    background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+    color: white;
+    padding: 1.5rem 2rem;
+    text-align: center;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.title-ua {
+    font-size: 2rem;
+    font-weight: 800;
+    background: linear-gradient(135deg, #afc5e1, #3b82f6);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    margin-bottom: 0.5rem;
+}
+
+.title-en {
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: #bbc8e3;
+    border-top: 1px solid #e5e7eb;
+    padding-top: 0.75rem;
+    margin-top: 0.5rem;
+}
+
+.nav-bar {
+    background: #ebf3f4;
+    box-shadow: 0 5px 4px rgba(168, 168, 195, 0.34);
+    border-bottom: 1px solid #e5e7eb;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    overflow-x: auto;
+}
+
+.nav-bar ul {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+    list-style: none;
+    display: flex;
+    gap: 0.5rem;
+    justify-content: space-between;
+    align-items: center;
+    min-width: min-content;
+}
+
+.nav-bar li {
+    padding: 0.875rem 0.75rem;
+    font-weight: 500;
+    font-size: 0.875rem;
+    color: #374151;
+    cursor: pointer;
+    position: relative;
+    transition: color 0.2s ease;
+    white-space: nowrap;
+    text-align: center;
+}
+
+.nav-bar li:hover {
+    color: #3b82f6;
+}
+
+.nav-bar li::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0.75rem;
+    right: 0.75rem;
+    height: 2px;
+    background: #3b82f6;
+    transform: scaleX(0);
+    transition: transform 0.2s ease;
+}
+
+.nav-bar li:hover::after {
+    transform: scaleX(1);
+}
+
+.main {
+    max-width: 1200px;
+    margin: 3rem auto;
+    padding: 0 1.5rem;
+}
+
+.hero {
+    background: #f1f5f9;
+    padding: 3rem 1.5rem;
+}
+
+.hero-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    flex-wrap: wrap;
+}
+
+.hero-text {
+    flex: 1;
+    min-width: 250px;
+}
+
+.hero-text h1 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: #0f172a;
+    margin-bottom: 1rem;
+    line-height: 1.2;
+}
+
+.hero-text p {
+    font-size: 1.125rem;
+    color: #334155;
+    line-height: 1.5;
+}
+
+.hero-image {
+    flex: 1;
+    min-width: 250px;
+    text-align: center;
+}
+
+.hero-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 1rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+section {
+    background: white;
+    border-radius: 1.5rem;
+    padding: 2rem;
+    margin-bottom: 2.5rem;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.05), 0 1px 2px 0 rgba(0, 0, 0, 0.03);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.section:hover {
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.08), 0 8px 10px -6px rgba(0, 0, 0, 0.02);
+}
+
+.section-title {
+    font-size: 1.75rem;
+    font-weight: 700;
+    margin-bottom: 1.25rem;
+    border-left: 5px solid #3b82f6;
+    padding-left: 1rem;
+    color: #0f172a;
+}
+
+.description-text {
+    font-size: 1.1rem;
+    color: #1f2937;
+    background: #f8fafc;
+    padding: 1rem 1.25rem;
+    border-radius: 1rem;
+    border-left: 3px solid #3b82f6;
+}
+
+.keywords-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin-top: 0.5rem;
+}
+
+.keyword-tag {
+    background: #eef2ff;
+    color: #1e40af;
+    padding: 0.4rem 1rem;
+    border-radius: 40px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    transition: all 0.2s;
+}
+
+.keyword-tag:hover {
+    background: #3b82f6;
+    color: white;
+    transform: translateY(-2px);
+}
+
+.tasks-list {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.tasks-list li {
+    margin-bottom: 0.85rem;
+    padding-left: 1.75rem;
+    position: relative;
+    font-size: 1rem;
+}
+
+.tasks-list li::before {
+    content: "▹";
+    position: absolute;
+    left: 0;
+    color: #3b82f6;
+    font-weight: bold;
+}
+
+.footer {
+    background: #0f172a;
+    color: #cbd5e1;
+    text-align: center;
+    padding: 2rem;
+    margin-top: 2rem;
+    font-size: 0.9rem;
+    border-top: 1px solid #1e293b;
+}
